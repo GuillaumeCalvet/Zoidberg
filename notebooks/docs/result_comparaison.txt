@@ -1,0 +1,11 @@
+Our model, raw data : 
+
+Accuracy: 0.75
+Precision: 0.7
+Recall (Sensitivity): 0.875
+Specificity: 0.625
+F1 Score: 0.778
+MCC: 0.516
+
+Our model, processed data :
+

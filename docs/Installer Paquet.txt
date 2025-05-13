@@ -1,0 +1,1 @@
+pip install <ton-paquet> --break-system-packages
