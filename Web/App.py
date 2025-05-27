@@ -1,7 +1,7 @@
 import os
 from flask import Flask, request, render_template, redirect, url_for, send_from_directory
 from werkzeug.utils import secure_filename
-from predict import load_model, predict_image, generate_report
+from predict import load_model, predict_image, generate_report, explain_prediction
 
 app = Flask(__name__, template_folder='templates')
 
@@ -10,13 +10,13 @@ MODEL_FOLDER = os.path.expanduser('~/Zoidberg/models')
 REPORT_FOLDER = os.path.expanduser('~/Zoidberg/docs')
 
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(REPORT_FOLDER, exist_ok=True)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
     prediction = None
+    explanation = None
     model_choices = [f for f in os.listdir(MODEL_FOLDER) if f.endswith('.pt') or f.endswith('.pth')]
     selected_model = None
     filename = None
@@ -39,12 +39,14 @@ def index():
             file.save(filepath)
 
             model_path = os.path.join(MODEL_FOLDER, selected_model)
-            model = load_model(model_path)
-            prediction = predict_image(model, filepath)
+            model, class_labels = load_model(model_path)
+            prediction = predict_image(model, filepath, class_labels)
+            explanation = explain_prediction(prediction)
             report_path = generate_report(prediction, filename, REPORT_FOLDER)
 
     return render_template('index.html',
                            prediction=prediction,
+                           explanation=explanation,
                            model_choices=model_choices,
                            selected_model=selected_model,
                            filename=filename,

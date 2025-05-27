@@ -1,0 +1,4 @@
+Analyse de l'image : IMG_20190829_140446.jpg
+Résultats de la prédiction :
+- Normal : 56.00%
+- Pneumonie : 44.00%

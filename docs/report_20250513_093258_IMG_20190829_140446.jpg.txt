@@ -1,0 +1,5 @@
+Analyse de l'image : IMG_20190829_140446.jpg
+Résultats de la prédiction :
+- Normal : 76.00%
+- Pneumonie Virale : 12.00%
+- Pneumonie Bactérienne : 13.00%

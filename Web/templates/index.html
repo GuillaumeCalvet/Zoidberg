@@ -53,10 +53,15 @@
             <h2>Résultat de l’analyse :</h2>
             <ul>
                 {% for label, score in prediction.items() %}
-                    <li><strong>{{ label }} :</strong> {{ '%.2f' | format(score * 100) }}%</li>
+                    <li><strong>{{ label }} :</strong> {{ '%.2f' | format(score|float * 100) }}%</li>
                 {% endfor %}
             </ul>
             <canvas id="predictionChart" style="margin-top: 2rem;"></canvas>
+
+            {% if explanation %}
+                <h2>🧠 Interprétation IA :</h2>
+                <p>{{ explanation }}</p>
+            {% endif %}
         {% endif %}
 
         {% if report_path %}
@@ -70,7 +75,9 @@
             localStorage.setItem('darkmode', document.body.classList.contains('dark'));
         }
         window.onload = () => {
-            if (localStorage.getItem('darkmode') === 'true') { document.body.classList.add('dark'); }
+            if (localStorage.getItem('darkmode') === 'true') {
+                document.body.classList.add('dark');
+            }
             document.querySelector("form").addEventListener("submit", () => {
                 document.getElementById("loading").style.display = "block";
             });

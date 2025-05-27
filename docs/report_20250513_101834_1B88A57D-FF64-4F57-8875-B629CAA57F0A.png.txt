@@ -1,0 +1,5 @@
+Analyse de l'image : 1B88A57D-FF64-4F57-8875-B629CAA57F0A.png
+Résultats de la prédiction :
+- Normal : 77.00%
+- Pneumonie Virale : 10.00%
+- Pneumonie Bactérienne : 14.00%
