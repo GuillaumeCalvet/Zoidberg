@@ -1,0 +1,6 @@
+Image analysée : fap.jpeg
+
+Résultats de prédiction :
+ - Normal : 0.15%
+ - Pneumonie Bactérienne : 97.12%
+ - Pneumonie Virale : 2.73%

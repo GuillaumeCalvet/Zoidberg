@@ -1,0 +1,4 @@
+Analyse de l'image : Capture_decran_2025-06-03_100136.png
+Résultats de la prédiction :
+- Normal : 34.00%
+- Pneumonie : 66.00%

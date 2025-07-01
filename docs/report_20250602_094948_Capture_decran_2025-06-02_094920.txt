@@ -1,0 +1,5 @@
+Analyse de l'image : Capture_decran_2025-06-02_094920.png
+Résultats de la prédiction :
+- Normal : 47.00%
+- Pneumonie Virale : 42.00%
+- Pneumonie Bactérienne : 11.00%

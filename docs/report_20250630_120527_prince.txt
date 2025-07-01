@@ -1,0 +1,6 @@
+Image analysée : prince.jpeg
+
+Résultats de prédiction :
+ - Normal                    : 99.95%
+ - Pneumonie Bactérienne     : 0.04%
+ - Pneumonie Virale          : 0.01%

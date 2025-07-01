@@ -1,0 +1,5 @@
+Image analysée : favicon.ico
+Résultats de prédiction :
+- Normal : 5.83%
+- Pneumonie Bactérienne : 53.95%
+- Pneumonie Virale : 40.22%

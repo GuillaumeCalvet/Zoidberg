@@ -1,0 +1,6 @@
+Image analysée : dylan.jpeg
+
+Résultats de prédiction :
+ - Normal                    : 0.00%
+ - Pneumonie Bactérienne     : 20.62%
+ - Pneumonie Virale          : 79.38%

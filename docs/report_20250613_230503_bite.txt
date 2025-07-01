@@ -1,0 +1,6 @@
+Image analysée : bite.jpeg
+
+Résultats de prédiction :
+ - Normal : 0.00%
+ - Pneumonie Bactérienne : 99.98%
+ - Pneumonie Virale : 0.02%

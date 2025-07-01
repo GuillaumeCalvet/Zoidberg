@@ -1,0 +1,4 @@
+Analyse de l'image : 1000027197.jpg
+Résultats de la prédiction :
+- Normal : 40.00%
+- Pneumonie : 60.00%

@@ -1,0 +1,4 @@
+Image analysée : NORMAL2-IM-1437-0001.jpeg
+
+Résultats de prédiction :
+ - Incertain                 : 58.43%

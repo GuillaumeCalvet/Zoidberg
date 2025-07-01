@@ -1,0 +1,6 @@
+Image analysée : person1954_bacteria_4886.jpeg
+
+Résultats de prédiction :
+ - Normal                    : 0.01%
+ - Pneumonie Bactérienne     : 26.35%
+ - Pneumonie Virale          : 73.64%

@@ -1,0 +1,6 @@
+Image analysée : ljblj.jpeg
+
+Résultats de prédiction :
+ - Normal                    : 0.05%
+ - Pneumonie Bactérienne     : 3.42%
+ - Pneumonie Virale          : 96.53%

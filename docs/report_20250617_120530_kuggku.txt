@@ -1,0 +1,6 @@
+Image analysée : kuggku.jpeg
+
+Résultats de prédiction :
+ - Normal                    : 0.31%
+ - Pneumonie Bactérienne     : 0.25%
+ - Pneumonie Virale          : 99.44%

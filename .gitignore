@@ -1,0 +1,13 @@
+# Fichiers à ignorer
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+*.log
+
+# Dossiers lourds gérés par LFS
+models/
+uploads/
+data/
+
+# Fichiers d'environnement
+.env

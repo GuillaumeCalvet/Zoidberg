@@ -1,0 +1,6 @@
+Image analysée : bob.jpeg
+
+Résultats de prédiction :
+ - Normal                    : 0.11%
+ - Pneumonie Bactérienne     : 98.58%
+ - Pneumonie Virale          : 1.31%
